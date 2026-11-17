@@ -65,9 +65,9 @@ jobs:
     needs: test
     runs-on: ubuntu-latest
 
-    # Инцидент 1. Права для публикации в GHCR пока отсутствуют.
     permissions:
       contents: read
+      packages: write
 
     steps:
       - name: Checkout
